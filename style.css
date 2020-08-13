@@ -34,6 +34,7 @@ html { font-size: 1rem; }
 .header{
     z-index: 1;
     text-align: center;
+    font-family: 'Raleway', sans-serif;
     color:#fff;
     position: absolute;
     top: 40%;
@@ -76,7 +77,7 @@ html { font-size: 1rem; }
 }
 
 .nav p:hover{
-    color: rgb(112, 3, 3);
+    color: rgb(66, 0, 0);
 }
 
 .holder{
@@ -131,9 +132,10 @@ html { font-size: 1rem; }
 
 .aboutme-content
 {
-    margin-left: 5%;
+    font-size: 26px;
+    margin-left: 5%;    
     margin-right: 5%;
-    font-family: cursive;
+    font-family: Arial, Helvetica, sans-serif;
     color: rgb(190, 184, 184);
 }
 .aboutme .aboutme-content { font-size: 0.50rem; }
@@ -150,6 +152,30 @@ html { font-size: 1rem; }
     .aboutme-content { font-size: 2rem; }
 }
 
+.resume-desc{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.resume-desc button{
+    color: rgb(77, 1, 1);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.resume-desc button:hover{
+    background-color: rgb(88, 0, 0);
+    text-decoration: none;
+}
+
+.resume-desc a{
+    color: rgb(85, 2, 2);
+}
+
+.resume-desc a:hover{
+    color: white;
+    text-decoration: none;
+}
 .skill-sec{
     margin-left: 15px;
 }
