@@ -70,7 +70,9 @@ html { font-size: 1rem; }
     font-size: inherit;
     text-rendering: auto;
 }
-
+.nav{
+    background-image: linear-gradient( rgba(112, 110, 117, 0.829), rgba(112, 110, 117, 0.829));
+}
 .nav p{
     padding-top: 30px;
     color: black;
@@ -81,39 +83,72 @@ html { font-size: 1rem; }
 }
 
 .holder{
-    width: 100%;
-    /* background-color: rgba(255, 249, 249, 0.171); */
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-image: linear-gradient( rgba(112, 110, 117, 0.829), rgba(112, 110, 117, 0.829));
+}
+
+.aboutme-wrap .aboutme-img{
+    padding-left: 20px;
+    width: 90%;
+    display: flex;
+    text-align: center;
+}
+
+.aboutme-wrap .col-md-6{
+    text-align: center;
+    padding-left: 20px;
+}
+
+.aboutme-wrap img{
+    box-shadow: 0 0 5px rgba(34, 23, 23, 0.87);
+    border-radius: 50%;
+}
+
+
+.aboutme-wrap img { height: 350px;
+    width: 300px; }
+
+@media (min-width: 576px) {
+    .aboutme-wrap img { height: 350px;
+        width: 300px; }
+}
+@media (min-width: 768px) {
+    .aboutme-wrap img { height: 350px;
+        width: 300px; }
+}
+@media (min-width: 992px) {
+    .aboutme-wrap img { height: 370px;
+        width: 300px; }
+}
+@media (min-width: 1200px) {
+    .aboutme-wrap img { height: 390px;
+        width: 340px; }
 }
 
 
 .aboutme{
-    width: 70%;
-    margin-left: 15%;
-    background-color: rgb(83, 3, 3);
     /* background-image: linear-gradient(to right, rgb(39, 35, 35), rgb(129, 129, 129), rgb(39, 35, 35));  */
-    background-image: linear-gradient(rgb(49, 48, 48), black);
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: 550;
+    /* background-image: linear-gradient(rgb(49, 48, 48), black); */
 }
-.aboutme {  height: 200px; }
-@media (min-width: 576px) {
-    .aboutme {  height: 200px; }
-}
-@media (min-width: 768px) {
-    .aboutme {  height: 100px; }
-}
-@media (min-width: 992px) {
-    .aboutme {  height: 100px; }
-}
-@media (min-width: 1200px) {
-    .aboutme {  height: 220px; }
-}
-
 
 .aboutme #aboutme{
     text-align: center;
     /* margin-left: 40%; */
     margin-bottom: 5px;
-    color: rgb(221, 221, 221);
+    color: rgb(48, 46, 46);
     font-weight: 800;
+    font-size: 1rem;
+}
+
+.aboutme-content{
+    margin-top: 50px;
+    padding-left: 15px;
+    padding-right: 20px;
 }
 
 .aboutme #aboutme { font-size: 1rem; }
@@ -130,28 +165,6 @@ html { font-size: 1rem; }
     #aboutme { font-size: 2rem; }
 }
 
-.aboutme-content
-{
-    font-size: 26px;
-    margin-left: 5%;    
-    margin-right: 5%;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(190, 184, 184);
-}
-.aboutme .aboutme-content { font-size: 0.50rem; }
-@media (min-width: 576px) {
-    .aboutme-content { font-size: 1.25rem; }
-}
-@media (min-width: 768px) {
-    .aboutme-content { font-size: 2.5rem; }
-}
-@media (min-width: 992px) {
-    .aboutme-content { font-size: 1.75rem; }
-}
-@media (min-width: 1200px) {
-    .aboutme-content { font-size: 2rem; }
-}
-
 .resume-desc{
     margin-top: 50px;
     text-align: center;
@@ -161,6 +174,7 @@ html { font-size: 1rem; }
     color: rgb(77, 1, 1);
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
+    border: 30px maroon;
 }
 
 .resume-desc button:hover{
@@ -177,7 +191,8 @@ html { font-size: 1rem; }
     text-decoration: none;
 }
 .skill-sec{
-    margin-left: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 .skills p{
@@ -195,15 +210,14 @@ html { font-size: 1rem; }
 }
 
 .progress {
-    background-image: rgb(138, 138, 138);
+    background-image: rgba(107, 107, 107, 0.274);
 }
 
 .progress-bar{
-    background-image: linear-gradient(rgb(73, 1, 1), maroon);
+    background-image: linear-gradient(rgb(54, 53, 53), rgb(63, 58, 58));
 }
 
 #portfolio p{
-    margin-top: 55px;
     text-align: center;
     font-size: 45px;
     font-weight: 600;
