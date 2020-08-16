@@ -100,14 +100,19 @@ html { font-size: 1rem; }
     padding-left: 20px;
 }
 
+.my-image div{
+    padding-top: 20px;
+}
+
 .aboutme-wrap img{
-    box-shadow: 0 0 5px rgba(34, 23, 23, 0.87);
+    padding : 8px 10px;
+    box-shadow: 0 0 5px rgba(34, 23, 23, 0.459);
     border-radius: 50%;
 }
 
 
-.aboutme-wrap img { height: 350px;
-    width: 300px; }
+.aboutme-wrap img { height: 250px;
+    width: 200px; }
 
 @media (min-width: 576px) {
     .aboutme-wrap img { height: 350px;
@@ -122,17 +127,17 @@ html { font-size: 1rem; }
         width: 300px; }
 }
 @media (min-width: 1200px) {
-    .aboutme-wrap img { height: 390px;
-        width: 340px; }
+    .aboutme-wrap img { height: 290px;
+        width: 240px; }
 }
 
 
 .aboutme{
     /* background-image: linear-gradient(to right, rgb(39, 35, 35), rgb(129, 129, 129), rgb(39, 35, 35));  */
-    font-size: 18px;
+    padding-top: 10px;
+    font-size: 17px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-
     /* background-image: linear-gradient(rgb(49, 48, 48), black); */
 }
 
@@ -146,12 +151,11 @@ html { font-size: 1rem; }
 }
 
 .aboutme-content{
-    margin-top: 50px;
     padding-left: 15px;
     padding-right: 20px;
 }
 
-.aboutme #aboutme { font-size: 1rem; }
+.aboutme #aboutme { font-size: 1.5rem; }
 @media (min-width: 576px) {
     #aboutme { font-size: 1.25rem; }
 }
