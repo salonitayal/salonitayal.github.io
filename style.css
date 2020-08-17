@@ -71,21 +71,21 @@ html { font-size: 1rem; }
     text-rendering: auto;
 }
 .nav{
-    background-image: linear-gradient( rgba(112, 110, 117, 0.829), rgba(112, 110, 117, 0.829));
+    background-image: linear-gradient( rgb(39, 35, 35), rgb(39, 35, 35));
 }
 .nav p{
     padding-top: 30px;
-    color: black;
+    color: rgb(105, 103, 103);
 }
 
 .nav p:hover{
-    color: rgb(66, 0, 0);
+    color: rgb(187, 187, 187);
 }
 
 .holder{
     padding-top: 20px;
     padding-bottom: 30px;
-    background-image: linear-gradient( rgba(112, 110, 117, 0.829), rgba(112, 110, 117, 0.829));
+    background-image: linear-gradient( rgb(39, 35, 35), rgb(39, 35, 35));
 }
 
 .aboutme-wrap .aboutme-img{
@@ -110,7 +110,7 @@ html { font-size: 1rem; }
     border-radius: 50%;
     background-size: cover;
     object-fit: contain;
-    background-color: rgb(17, 17, 17);
+    background-color: rgb(34, 33, 33);
 }
 
 
@@ -148,7 +148,7 @@ html { font-size: 1rem; }
     text-align: center;
     /* margin-left: 40%; */
     margin-bottom: 5px;
-    color: rgb(48, 46, 46);
+    color: rgb(119, 119, 119);
     font-weight: 800;
     font-size: 1rem;
 }
@@ -156,6 +156,7 @@ html { font-size: 1rem; }
 .aboutme-content{
     padding-left: 15px;
     padding-right: 20px;
+    color: rgb(119, 119, 119);
 }
 
 .aboutme #aboutme { font-size: 1.5rem; }
@@ -190,7 +191,7 @@ html { font-size: 1rem; }
 }
 
 .resume-desc a{
-    color: rgb(85, 2, 2);
+    color: rgb(105, 2, 2);
 }
 
 .resume-desc a:hover{
@@ -206,9 +207,11 @@ html { font-size: 1rem; }
     margin-bottom: 2px;
     margin-top: 25px;
     font-size: 35px;
+    color: rgb(105, 103, 103);
 }
 
 .progress-wrap h3{
+    color: rgb(158, 158, 158);
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 5px;
@@ -221,7 +224,7 @@ html { font-size: 1rem; }
 }
 
 .progress-bar{
-    background-image: linear-gradient(rgb(54, 53, 53), rgb(63, 58, 58));
+    background-image: linear-gradient(rgb(122, 122, 122), rgb(98, 98, 98));
 }
 
 #portfolio p{
