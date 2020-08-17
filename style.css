@@ -75,7 +75,9 @@ html { font-size: 1rem; }
 }
 .nav p{
     padding-top: 30px;
-    color: rgb(105, 103, 103);
+    color: rgb(151, 151, 151);
+    font-size: 1rem;
+    font-weight: 900;
 }
 
 .nav p:hover{
@@ -153,7 +155,8 @@ html { font-size: 1rem; }
     font-size: 1rem;
 }
 
-.aboutme-content{
+.aboutme-content .aboutme{
+    font-size: 16px;
     padding-left: 15px;
     padding-right: 20px;
     color: rgb(119, 119, 119);
@@ -187,7 +190,6 @@ html { font-size: 1rem; }
 
 .resume-desc button:hover{
     background-color: rgb(88, 0, 0);
-    text-decoration: none;
 }
 
 .resume-desc a{
@@ -207,11 +209,11 @@ html { font-size: 1rem; }
     margin-bottom: 2px;
     margin-top: 25px;
     font-size: 35px;
-    color: rgb(105, 103, 103);
+    color: rgb(190, 190, 190);
 }
 
 .progress-wrap h3{
-    color: rgb(158, 158, 158);
+    color: rgb(199, 199, 199);
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 5px;
@@ -229,7 +231,7 @@ html { font-size: 1rem; }
 
 #portfolio p{
     text-align: center;
-    font-size: 45px;
+    font-size: 55px;
     font-weight: 600;
     color: whitesmoke;
 }
