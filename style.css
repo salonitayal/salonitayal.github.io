@@ -15,7 +15,6 @@ html { font-size: 1rem; }
 }
 
 
-
 #particles-js{
     background-color: maroon; /* For browsers that do not support gradients */
     background-image: linear-gradient(rgb(87, 2, 2), black); /* Standard syntax (must be last) */
@@ -335,14 +334,21 @@ html { font-size: 1rem; }
    position: relative;
 }
 
+#contact #portfolio p
+{
+    color: rgb(99, 97, 97);
+    font-size: 40px;
+    padding-top: 15px;
+}
+
 .contact-content{
-    margin: 0 auto;
+    margin-top: 80px;
     padding: 8px;
     text-align: center;
     position: absolute;
-    color: black;
-    background-color: black;
-    top: 50%;
+    /* color: rgb(99, 94, 94); */
+    background-color: rgb(99, 97, 97);
+    top: 35%;
     left: 50%;
     -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
@@ -352,8 +358,8 @@ html { font-size: 1rem; }
     margin-top: 10%;
     font-size: 15px; 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(53, 53, 53);
+    color: rgb(68, 68, 68);
 }
 .page-footer a{
-    color: rgb(71, 1, 1);
+    color: rgb(104, 0, 0);
 }
