@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
     <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -159,27 +160,45 @@
             <p style="color: whitesmoke;">Website Development/<br/>
             Designing</p>
             <div>
+                <button type="button" class="btn" data-toggle="modal" data-target="#modalSocial1">
+                    <figure class="snip1581"><img src="images/ipl.jpg" alt="profile-sample2"/>
+                        <figcaption>
+                        <h3 class="title1">IPL </h3>
+                        <h3 class="title2">Live Score</h3>
+                        <h3 class="title3">Application</h3>
+                        </figcaption>
+                    </figure>
+                </button>
+
+                <button type="button" class="btn" data-toggle="modal" data-target="#modalSocial2">
                 <figure class="snip1581"><img src="images/blog-img.jpg" alt="profile-sample2"/>
                     <figcaption>
                       <h3 class="title1">The</h3>
                       <h3 class="title2">Blog</h3>
                       <h3 class="title3">Application</h3>
-                    </figcaption><a href="https://github.com/salonitayal/BlogApp"></a>
+                    </figcaption>                      
                 </figure>
+                </button>
+
+                <button type="button" class="btn" data-toggle="modal" data-target="#modalSocial3">
                 <figure class="snip1581"><img src="images/reddit-img.jpg" alt="profile-sample2"/>
                     <figcaption>
                       <h3 class="title1">The</h3>
                       <h3 class="title2">Reddit</h3>
                       <h3 class="title3">Clone</h3>
-                    </figcaption><a href="https://github.com/salonitayal/RedditClone"></a>
+                    </figcaption>
                 </figure>
+                </button>
+
+                <button type="button" class="btn" data-toggle="modal" data-target="#modalSocial4">
                 <figure class="snip1581"><img src="images/bg.jpg" alt="profile-sample2"/>
                     <figcaption>
                       <h3 class="title1">Port</h3>
                       <h3 class="title2">folio</h3>
                       <h3 class="title3">Webpage</h3>
-                    </figcaption><a href="images/bg.jpg"></a>
+                    </figcaption>
                 </figure>
+                </button>
             </div>
         </div>
 
@@ -187,13 +206,15 @@
         <div class="tech-type">
             <p style="color: whitesmoke;">Machine Learning</p>
             <div>
+                <button type="button" class="btn" data-toggle="modal" data-target="#modalSocial5">
                 <figure class="snip1581"><img src="images/best-wine-img.jpg" alt="profile-sample2"/>
                     <figcaption>
                       <h3 class="title1">Predict</h3>
                       <h3 class="title2">Red Wine</h3>
                       <h3 class="title3">Quality</h3>
-                    </figcaption><a href="https://github.com/salonitayal/Red-Wine-Quality-Prediction"></a>
+                    </figcaption>
                 </figure>
+                </button>
                 <!-- <figure class="snip1581"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample4.jpg" alt="profile-sample2"/>
                     <figcaption>
                       <h3 class="title1">Covid-19</h3>
@@ -210,6 +231,171 @@
                 </figure> -->
             </div>
         </div>
+
+        <!--Portfolio modal box design-->
+        
+
+         <!-- The Modal -->
+         <div class="modal fade" id="modalSocial1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+         <div class="modal-dialog cascading-modal" role="document">
+ 
+             <!--Content-->
+             <div class="modal-content">
+ 
+             <!--Header-->
+             <div class="modal-header light-blue darken-3 white-text">
+                 <h5 class="title"><b>Live Score App </b></h5>
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                     aria-hidden="true">&times;</span></button>
+             </div>
+ 
+             <!--Body-->
+             <div class="modal-body mb-0 text-center">
+                 <p > A ReactJs app that fetches cricket(IPL) related data from cricapi.</p>
+                 <p><b>Technology used: </b> ReactJS, Material UI</p>
+                 <div>
+                    <button type="button" class="btn btn-danger" style="margin-right: 2%; color: white;"><i class="icon fa fa-link" aria-hidden="true"></i>
+                    <a style="color: white;" target="_blank" href="https://ipl-score-react-app.netlify.app/">visit</a></button>
+
+                    <button type="button" class="btn btn-danger" style="background-color: black;"><i class="icon fa fa-github-alt" aria-hidden="true"></i> 
+                    <a style="color: white;" target="_blank" href="https://github.com/salonitayal/CricketScoreReactApp">github</a></button>
+                </div>
+             </div>
+ 
+             </div>
+         </div>
+         </div>
+
+          <!-- The Modal -->
+        <div class="modal fade" id="modalSocial2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog cascading-modal" role="document">
+
+            <!--Content-->
+            <div class="modal-content">
+
+            <!--Header-->
+            <div class="modal-header light-blue darken-3 white-text">
+                <h5 class="title"><b>Blog App </b></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+            </div>
+
+            <!--Body-->
+            <div class="modal-body mb-0 text-center">
+                <p> A very simple Django blog that lets user create blogposts.</p>
+                <p><b>Technology used: </b>Django, Html, Bootstrap4</p>
+                <div>
+                    <button type="button" class="btn btn-danger" style="margin-right: 2%; color: white;"><i class="icon fa fa-link" aria-hidden="true"></i>
+                    <a style="color: white;" target="_blank" href="https://github.com/salonitayal/BlogApp">visit</a></button>
+
+                    <button type="button" class="btn btn-danger" style="background-color: black;"><i class="icon fa fa-github-alt" aria-hidden="true"></i> 
+                    <a style="color: white;" target="_blank" href="https://github.com/salonitayal/BlogApp">github</a></button>
+                </div>
+            </div>
+
+            </div>
+        </div>
+        </div>
+
+         <!-- The Modal -->
+         <div class="modal fade" id="modalSocial3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+         <div class="modal-dialog cascading-modal" role="document">
+ 
+             <!--Content-->
+             <div class="modal-content">
+ 
+             <!--Header-->
+             <div class="modal-header light-blue darken-3 white-text">
+                 <h5 class="title"><b>Reddit Clone </b></h5>
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                     aria-hidden="true">&times;</span></button>
+             </div>
+ 
+            <!--Body-->
+            <div class="modal-body mb-0 text-center">
+                <p > A Django WebApp that authenticates & authorizes the user then the user can create the posts.</p>
+                <p><b>Technology used: </b>Django, Html, Bootstrap4</p>
+                <div>
+                    <button type="button" class="btn btn-danger" style="margin-right: 2%; color: white;"><i class="icon fa fa-link" aria-hidden="true"></i>
+                    <a style="color: white;" target="_blank" href="https://github.com/salonitayal/RedditClone">visit</a></button>
+
+                    <button type="button" class="btn btn-danger" style="background-color: black;"><i class="icon fa fa-github-alt" aria-hidden="true"></i> 
+                    <a style="color: white;" target="_blank" href="https://github.com/salonitayal/RedditClone">github</a></button>
+                </div>
+            </div>
+ 
+             </div>
+         </div>
+         </div>
+
+        <!-- The Modal -->
+        <div class="modal fade" id="modalSocial4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog cascading-modal" role="document">
+
+            <!--Content-->
+            <div class="modal-content">
+
+            <!--Header-->
+            <div class="modal-header light-blue darken-3 white-text">
+                <h5 class="title"><b>Personal Website</b></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+            </div>
+
+            <!--Body-->
+            <div class="modal-body mb-0 text-center">
+                <p > Designed the personal Website.</p>
+                <p><b>Technology used: </b>Html, CSS, Bootstrap4</p>
+                <div>
+                    <button type="button" class="btn btn-danger" style="margin-right: 2%; color: white;"><i class="icon fa fa-link" aria-hidden="true"></i>
+                    <a style="color: white;" target="_blank" href="https://salonitayal.github.io">visit</a></button>
+
+                    <button type="button" class="btn btn-danger" style="background-color: black;"><i class="icon fa fa-github-alt" aria-hidden="true"></i> 
+                    <a style="color: white;" target="_blank" href="https://github.com/salonitayal/salonitayal.github.io">github</a></button>
+                </div>
+            </div>
+
+            </div>
+        </div>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal fade" id="modalSocial5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog cascading-modal" role="document">
+
+            <!--Content-->
+            <div class="modal-content">
+
+            <!--Header-->
+            <div class="modal-header light-blue darken-3 white-text">
+                <h5 class="title"><b>Red Wine Quality Prediction</b></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+            </div>
+
+            <!--Body-->
+            <div class="modal-body mb-0 text-center">
+                <p > A Machine Learning model that predicts the quality of the Red wine. </p>
+                <p><b>Technology used: </b>Machine Learning, Python</p>
+                <div>
+                    <button type="button" class="btn btn-danger" style="margin-right: 2%; color: white;"><i class="icon fa fa-link" aria-hidden="true"></i>
+                    <a style="color: white;" target="_blank" href="https://github.com/salonitayal/Red-Wine-Quality-Prediction/blob/master/Predicting-Red-Wine-Quality.ipynb">visit</a></button>
+
+                    <button type="button" class="btn btn-danger" style="background-color: black;"><i class="icon fa fa-github-alt" aria-hidden="true"></i> 
+                    <a style="color: white;" target="_blank" href="https://github.com/salonitayal/Red-Wine-Quality-Prediction">github</a></button>
+                </div>
+            </div>
+
+            </div>
+        </div>
+        </div>
+
+        
 
         <div class="tech-type">
             <p style="color: whitesmoke;">Problem Solving </p>
