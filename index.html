@@ -21,6 +21,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <!--js for portfolio card-->
+    <script type="text/javascript">
+        /* Demo purposes only */
+        $(".hover").mouseleave(
+            function () {
+            $(this).removeClass("hover");
+            }
+        );
+        </script>
+
 <body>
     <div id="particles-js">
         <div class="header">
@@ -79,43 +89,49 @@
                 <p>SKILLS</p>
             </div>
 
-            <div class="row">
-                <div class="col-md-6">
+            <div class="row" style="width: 90%; margin-left: 30px;">
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
                     <div class="progress-wrap">
-                        <h3>HTML5/CSS/Bootstrap4</h3>
+                        <h3>Data Structures & Algorithms</h3>
                         <div class="progress" style="height: 10px;">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
                     <div class="progress-wrap">
-                        <h3>Python</h3>
+                        <h3>C++(STL)</h3>
                         <div class="progress" style="height: 10px;">
                             <div class="progress-bar bg-success" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
                     <div class="progress-wrap">
-                        <h3>Django</h3>
+                        <h3>HTML5/CSS/Bootstrap4</h3>
                         <div class="progress" style="height: 10px;">
                             <div class="progress-bar bg-success" role="progressbar" style="width: 55%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
                     <div class="progress-wrap">
-                        <h3>Machine Learning</h3>
+                        <h3>Python</h3>
                         <div class="progress" style="height: 10px;">
                             <div class="progress-bar bg-success" role="progressbar" style="width: 35%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
                     <div class="progress-wrap">
                         <h3>Github</h3>
                         <div class="progress" style="height: 10px;">
@@ -124,18 +140,20 @@
                     </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
                     <div class="progress-wrap">
-                        <h3>Problem Solving</h3>
+                        <h3>Machine Learning</h3>
                         <div class="progress" style="height: 10px;">
                             <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
                     <div class="progress-wrap">
-                        <h3>C++(STL)</h3>
+                        <h3>Django</h3>
                         <div class="progress" style="height: 10px;">
                             <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
@@ -151,7 +169,7 @@
     <!--skills ended-->  
 
     <!--Portfolio starts-->
-    <div class="jumbotron-fluid" style="background-image: linear-gradient(rgb(39, 35, 35), rgba(39, 35, 35, 0.897), rgb(224, 211, 211));">
+    <div class="portfolio-wrapper">
         <div id="portfolio">
             <p>PORTFOLIO</p>
         </div>
@@ -170,7 +188,7 @@
                     </figure>
                 </button>
 
-                <button type="button" class="btn" data-toggle="modal" data-target="#modalSocial2">
+                <!-- <button type="button" class="btn" data-toggle="modal" data-target="#modalSocial2">
                 <figure class="snip1581"><img src="images/blog-img.jpg" alt="profile-sample2"/>
                     <figcaption>
                       <h3 class="title1">The</h3>
@@ -178,7 +196,7 @@
                       <h3 class="title3">Application</h3>
                     </figcaption>                      
                 </figure>
-                </button>
+                </button> -->
 
                 <button type="button" class="btn" data-toggle="modal" data-target="#modalSocial3">
                 <figure class="snip1581"><img src="images/reddit-img.jpg" alt="profile-sample2"/>
@@ -206,6 +224,15 @@
         <div class="tech-type">
             <p style="color: whitesmoke;">Machine Learning</p>
             <div>
+                <button type="button" class="btn" data-toggle="modal" data-target="#modalSocial5">
+                    <figure class="snip1581"><img src="https://raw.githubusercontent.com/salonitayal/Covid-Detection-Using-X-ray-Images/master/detectCovid19/screenshots/Screenshot%20from%202021-05-10%2019-21-51.png" alt="profile-sample2"/>
+                    <figcaption>
+                        <h3 class="title1">Covid-19</h3>
+                        <h3 class="title2">Detection</h3>
+                        <h3 class="title3">using X-Rays</h3>
+                    </figcaption>
+                </figure>
+                </button>
                 <button type="button" class="btn" data-toggle="modal" data-target="#modalSocial5">
                 <figure class="snip1581"><img src="images/best-wine-img.jpg" alt="profile-sample2"/>
                     <figcaption>
@@ -268,21 +295,21 @@
          </div>
 
           <!-- The Modal -->
-        <div class="modal fade" id="modalSocial2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        <!-- <div class="modal fade" id="modalSocial2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
         aria-hidden="true">
         <div class="modal-dialog cascading-modal" role="document">
 
-            <!--Content-->
+            
             <div class="modal-content">
 
-            <!--Header-->
+            
             <div class="modal-header light-blue darken-3 white-text">
                 <h5 class="title"><b>Blog App </b></h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                     aria-hidden="true">&times;</span></button>
             </div>
 
-            <!--Body-->
+            
             <div class="modal-body mb-0 text-center">
                 <p> A very simple Django blog that lets user create blogposts.</p>
                 <p><b>Technology used: </b>Django, Html, Bootstrap4</p>
@@ -297,7 +324,7 @@
 
             </div>
         </div>
-        </div>
+        </div> -->
 
          <!-- The Modal -->
          <div class="modal fade" id="modalSocial3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
@@ -433,6 +460,12 @@
         <div class="tech-type">
             <p style="color: whitesmoke;">Problem Solving </p>
             <div>
+                <figure class="snip1581"><img src="https://leetcode.com/static/images/LeetCode_logo_rvs.png" alt="profile-sample2"/>
+                    <figcaption>
+                      <h3 class="title2">Leet</h3>
+                      <h3 class="title3">Code</h3>
+                    </figcaption><a href="https://leetcode.com/salonitayal/"></a>
+                </figure>
                 <figure class="snip1581"><img src="images/gfg-img.png" alt="profile-sample2"/>
                     <figcaption>
                       <h3 class="title1">Geeks</h3>
@@ -469,17 +502,17 @@
             </div>
             <div class="contact-content">
                 <div class="header-icons">
-                    <a aria-label="Send email" href="mailto:saloni.tayal.cs.2017@miet.ac.in"><i class="icon fa fa-envelope"><p style="font-size: 14px;padding-top: 6px;">Mail</p></i></a>
-                    <a aria-label="My Twitter" target="_blank" href="https://twitter.com/salonitayal"><i class="icon fa fa-twitter" aria-hidden="true"><p style="font-size: 14px;padding-top: 6px;">twitter</p></i></a>
-                    <a aria-label="My Github" target="_blank" href="https://github.com/salonitayal"><i class="icon fa fa-github-alt" aria-hidden="true"><p style="font-size: 14px;padding-top: 6px;">github</p></i></a>
-                    <a aria-label="My Instagram" target="_blank" href="https://linkedin.com/in/salonitayal"><i class="icon fa fa-linkedin" aria-hidden="true"><p style="font-size: 14px;padding-top: 6px;">linkedin</p></i></a>
+                    <a aria-label="Send email" href="mailto:saloni.tayal.cs.2017@miet.ac.in"><i style="color: gray;" class="icon fa fa-envelope"><p style="font-size: 14px;padding-top: 6px;">Mail</p></i></a>
+                    <a aria-label="My Twitter" target="_blank" href="https://twitter.com/salonitayal"><i style="color: gray;" class="icon fa fa-twitter" aria-hidden="true"><p style="font-size: 14px;padding-top: 6px;">twitter</p></i></a>
+                    <a aria-label="My Github" target="_blank" href="https://github.com/salonitayal"><i style="color: gray;" class="icon fa fa-github-alt" aria-hidden="true"><p style="font-size: 14px;padding-top: 6px;">github</p></i></a>
+                    <a aria-label="My Instagram" target="_blank" href="https://linkedin.com/in/salonitayal"><i style="color: gray;" class="icon fa fa-linkedin" aria-hidden="true"><p style="font-size: 14px;padding-top: 6px;">linkedin</p></i></a>
                     <!-- <a aria-label="View Resume" target="_blank" href="#"><i class="icon fa fa-file-text" aria-hidden="true"><p style="font-size: 14px;padding-top: 6px;">Resume</p></i></a> -->
                 </div>
             </div>
         </div>
 
         <!--Counter -->
-        <div align=center><p style="font-size: 18px; font-weight: 600;">visits: <a href='https://www.counter12.com'><img src='https://www.counter12.com/img-BBW51zxWx15db68a-9.gif' border='0' alt='contador de visitantes'></a><script type='text/javascript' src='https://www.counter12.com/ad.js?id=BBW51zxWx15db68a'></script></div>
+        <!-- <div align=center><p style="font-size: 18px; font-weight: 600;">visits: <a href='https://www.counter12.com'><img src='https://www.counter12.com/img-BBW51zxWx15db68a-9.gif' border='0' alt='contador de visitantes'></a><script type='text/javascript' src='https://www.counter12.com/ad.js?id=BBW51zxWx15db68a'></script></div> -->
 
         <!-- Footer -->
         <footer class="page-footer ">
@@ -496,18 +529,11 @@
     <!--End wrapper ends-->
     
     <!-- Particle-js file -->
-    <script type="text/javascript" src="js/particles.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+    <!-- <script type="text/javascript" src="js/particles.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script> -->
 
-    <!--js for portfolio card-->
-    <script type="text/javascript">
-    /* Demo purposes only */
-    $(".hover").mouseleave(
-        function () {
-        $(this).removeClass("hover");
-        }
-    );
-    </script>
+    
+
 
 </body>
 </html>
