@@ -76,7 +76,7 @@ html { font-size: 1rem; }
     text-rendering: auto;
 }
 .nav{
-    background-image: linear-gradient(rgb(32, 29, 29), rgb(32, 29, 29));
+    background: rgba(214, 214, 214, 0.76);
 }
 .nav p{
     padding-top: 30px;
@@ -93,7 +93,7 @@ html { font-size: 1rem; }
     padding: 2% 0% 5% 0%;
     /* padding-top: 20px;
     padding-bottom: 30px; */
-    background-image: linear-gradient( rgb(32, 29, 29), rgb(32, 29, 29));
+    background-color: rgba(214, 214, 214, 0.76);
 }
 
 .aboutme-wrap .aboutme-img{
@@ -216,11 +216,11 @@ html { font-size: 1rem; }
     margin-bottom: 12px;
     margin-top: 25px;
     font-size: 35px;
-    color: rgb(190, 190, 190);
+    color: rgb(119, 117, 117);
 }
 
 .progress-wrap h3{
-    color: rgb(199, 199, 199);
+    color: rgb(136, 133, 133);
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 5px;
@@ -341,7 +341,8 @@ html { font-size: 1rem; }
 }
 
 .end-wrapper{
-    background-color: rgb(20, 18, 19);
+    margin-top: 30%;
+    background-color: rgba(20, 18, 19, 0.678);
 }
 #contact
 {
