@@ -1,586 +1,291 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Saloni Tayal</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Website of Saloni Tayal">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!--Social Media icons--> 
+    <link rel="stylesheet" 
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--Bootstrap--> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
-    <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.css" rel="stylesheet">
+
+    
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            font-size: 22px;
+            text-align: center;
+        }
+        .flex-container1 {
+            font-size: 44px;
+        }
+        .fa:hover {
+            color: black;
+            opacity: 0.7;
+            text-decoration: none;
+        }
+        
+        @media screen and (max-width: 800px)
+        {
+            div.front-page {
+                height: 200px;
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+            h1.name {
+                font-size: 37px;
+                -webkit-text-stroke: 1px black;
+                color: black;
+            }
+            h3.tagline {
+                font-size: 14px;
+            }
+            span.material-symbols-outlined {
+                font-size: 45px;
+            }
+            img.profile {
+                min-width: 140px;
+                height: auto;
+            }
+            button.btn {
+                font-size: 13px;
+            }
+            div.description {
+                font-size: 14px;
+                padding: 0 3% 0 3%;
+            }
+            img.project {
+                width: 85%;
+            }
+            .flex-container {
+                flex-direction: column;
+                padding: 15% 15px 15% 15px;
+                font-size: 14px;
+            }
+            div.left {
+                padding: 20% 0% 6% 0%;
+            }
+            div.right {
+                padding: 0% 0% 10% 0%;
+            }
+            .fa {
+                font-size: 8vw;
+                color: black;
+                margin: 5%;
+        }
+        }
+        
+        @media screen and (max-width: 1200px)
+        {
+            div.front-page {
+                height: 200px;
+                padding: 0% 10% 0% 10%;
+            }
+            h1.name {
+                font-size: 6vw;
+                color: black;
+                -webkit-text-stroke: 3px black;
+            }
+            span.material-symbols-outlined {
+                font-size: 90px;
+            }
+            div.description {
+                padding-right: 10%;
+                padding-left: 10%;
+            }
+            .flex-container {
+                padding: 10%;
+                font-size: 16px;
+            }
+            img.project {
+                width: 35vw;
+            }
+            div.left {
+                padding: 0% 3% 0% 0%;
+            }
+            div.right {
+                padding: 0% 0% 10% 0%;
+            }
+            .fa {
+                font-size: 6vw;
+                color: black;
+                margin: 3%;
+            }
+        }
+
+        @media screen and (min-width: 1200px)
+        {
+            div.container {
+                min-width: 100%;
+            }
+            div.front-page {
+                height: 400px;
+                padding: 3% 10% 0% 10%;
+            }
+            h1.name {
+                font-size: 6vw;
+                color: black;
+                padding-bottom: 10%;
+                -webkit-text-stroke: 3px black;
+            }
+            
+            span.material-symbols-outlined {
+                font-size: 150px;
+                font-weight: 200;
+            }
+            div.about {
+                min-height: 65vw;
+                padding: 90px 80px;
+            }
+            div.btn {
+                padding-top: 10%;
+            }
+            button.btn {
+                width: 13vw;
+                height: 7vh;
+                font-size: 24px;
+            }
+            div.description {
+                font-size: 22px;
+                padding-right: 15%;
+                padding-left: 15%;
+            }
+            div.description-arrow {
+                padding-bottom: 8%;
+            }
+            .flex-container {
+                padding: 10%;
+                font-size: 16px;
+            }
+            div.left {
+                padding: 0% 3% 0% 0%;
+            }
+            div.right {
+                font-size: 20px;
+                padding: 0% 0% 10% 0%;
+            }
+            .fa {
+                font-size: 5vw;
+                color: black;
+                margin: 3%;
+            }
+        }
+        
+    </style>
 </head>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <!--js for portfolio card-->
-    <script type="text/javascript">
-        /* Demo purposes only */
-        $(".hover").mouseleave(
-            function () {
-            $(this).removeClass("hover");
-            }
-        );
-        </script>
-
 <body>
-    <div id="particles-js">
-        <div class="header">
-            <h1 class="site-title">Saloni Tayal</h1>
-            <div class="header-icons">
-                <a aria-label="Send email" href="mailto:saloni.tayal.cs.2017@miet.ac.in"><i class="icon fa fa-envelope"></i></a>
-                <a aria-label="My Twitter" target="_blank" href="https://twitter.com/salonitayal"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
-                <a aria-label="My Github" target="_blank" href="https://github.com/SaloniTayal"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
-                <a aria-label="My Instagram" target="_blank" href="https://linkedin.com/in/salonitayal"><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
-                <!--<a aria-label="View Resume" target="_blank" href="#"><i class="icon fa fa-file-text" aria-hidden="true"></i></a>-->
-            </div>
+<div class="container" style="animation: bounce; animation-duration: 2s;" data-aos="fade-up" data-aos-duration="500">
+    <div class="row" style="height: 170px"></div>
+    <div class="row ">
+        <div class="front-page">
+        <h1 class="name" style="font-weight: 700;" data-aos="fade-up"><span style="color:White;">
+             Designing, </span>Development & lots of coffee !</h1>
+        <h3 class="tagline" style="color: black;" data-aos="fade-right"> Saloni Tayal | Software Engineer</h3>
         </div>
     </div>
-
-    <!--Navbarcode-->
-    <nav class="nav nav-pills nav-justified">
-        <a class="nav-link" href="#aboutme"><p>About</p></a>
-        <a class="nav-link" href="#portfolio"><p>Portfolio</p></a>
-        <a class="nav-link" href="#contact"><p>Contact</p></a>
-    </nav>
-
-    <div class="holder">
-        <section class="aboutme-wrap">
-            <div class="aboutme-img">
-                <section class="row">
-                    <div class="col-md-6 my-image">
-                        <div>
-                            <img src="images/sal.jpg" alt="Avatar"> 
-                        </div>
-                    </div>
-                    <div class="aboutme col-md-6">
-                        <div class="aboutme-content">
-                            <p id="aboutme">ABOUT ME</p>
-                            <p class="aboutme">
-                            I am Saloni Tayal, 
-                            <br/>Computer Science Graduate who is  
-                            enthusiastic about learning new technologies. I have created apps starting with requirements gathering designing and developing. I have also tried 
-                            my hands on making some Machine Learning prediction models. 
-                            <br/>I participate in online coding competitions to sharpen my Problem solving skills. 
-                            <br/>Besides programming I am interested in reading about Politics, History, Spirituality, also I enjoy playing badminton and chess.
-                            Feel free to contact me at <a href="mailto:salonitayal7164@gmail.com" style="color: rgb(83, 82, 82);"> saloni.tayal.cs.2017@miet.ac.in</a>.
-                            <!-- <br/>
-                            Here is my <a href="https://drive.google.com/file/d/1JnRRzv4-jD8n8GxLpsV0ISt4nbIJoiGP/view?usp=sharing">Resume</a>. -->
-                            <br/>
-                            </p>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-        </section>
-        <!--Skills -->
-
-        <div class="skill-sec">
-            <div class="skills">
-                <p>SKILLS</p>
-            </div>
-
-            <div class="row" style="width: 90%; margin-left: 30px;">
-                <div class="col-md-1"></div>
-                <div class="col-md-5">
-                    <div class="progress-wrap">
-                        <h3>Data Structures & Algorithms</h3>
-                        <div class="progress" style="height: 10px;">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-1"></div>
-                <div class="col-md-5">
-                    <div class="progress-wrap">
-                        <h3>C++(STL)</h3>
-                        <div class="progress" style="height: 10px;">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-1"></div>
-                <div class="col-md-5">
-                    <div class="progress-wrap">
-                        <h3>HTML5/CSS/Bootstrap4</h3>
-                        <div class="progress" style="height: 10px;">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 55%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-1"></div>
-                <div class="col-md-5">
-                    <div class="progress-wrap">
-                        <h3>Python</h3>
-                        <div class="progress" style="height: 10px;">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 35%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-1"></div>
-                <div class="col-md-5">
-                    <div class="progress-wrap">
-                        <h3>Github</h3>
-                        <div class="progress" style="height: 10px;">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-1"></div>
-                <div class="col-md-5">
-                    <div class="progress-wrap">
-                        <h3>Machine Learning</h3>
-                        <div class="progress" style="height: 10px;">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-1"></div>
-                <div class="col-md-5">
-                    <div class="progress-wrap">
-                        <h3>Django</h3>
-                        <div class="progress" style="height: 10px;">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="resume-desc">
-                <button type="button" class="btn btn-outline-danger"><a href="https://drive.google.com/file/d/1gUkft0TP95kP0_BEvVgIK_Pnjc-ZYzU6/view?usp=sharing">Resume</a></button>
-            </div>
+    <div class="row" style="margin-top: 150px; margin-bottom: 50px;" data-aos="fade-up">
+        <div class="col-10"></div>
+        <div class="animate__animated animate__flash">
+            <span class="material-symbols-outlined">arrow_downward</span>
         </div>
     </div>
-    <!--skills ended-->  
-    
+</div>
 
-    <!--Portfolio starts-->
-    <div class="portfolio-wrapper">
-        <div id="portfolio">
-            <p>PORTFOLIO</p>
-        </div>
-
-        <div class="tech-type">
-            <p style="color: whitesmoke;">Data Structures<br/>
-            & Algorithms</p>
-            <div>
-                <button type="button" class="btn" data-toggle="modal" data-target="#modalSocial7">
-                    <figure class="snip1581"><img src="https://miro.medium.com/max/805/1*f6IYu3GdmmISOSD4sweCqA.jpeg">
-                        <figcaption>
-                          <h3 class="title1">Data</h3>
-                          <h3 class="title2"> Structures </h3>
-                          <h3 class="title3">Algorithms</h3>
-                        </figcaption>
-                    </figure>
-                    </button>
-            </div>
-    
-        <div class="tech-type">
-            <p style="color: whitesmoke;">Website Development/<br/>
-            Designing</p>
-            <div>
-                <button type="button" class="btn" data-toggle="modal" data-target="#modalSocial1">
-                    <figure class="snip1581"><img src="images/ipl.jpg" alt="profile-sample2"/>
-                        <figcaption>
-                        <h3 class="title1">IPL </h3>
-                        <h3 class="title2">Live Score</h3>
-                        <h3 class="title3">Application</h3>
-                        </figcaption>
-                    </figure>
-                </button>
-
-                <button type="button" class="btn" data-toggle="modal" data-target="#modalSocial2">
-                <figure class="snip1581"><img src="images/craigslist-bg.png" alt="profile-sample2"/>
-                    <figcaption>
-                      <h3 class="title1">Craigs</h3>
-                      <h3 class="title2">list</h3>
-                      <h3 class="title3">Scraper</h3>
-                    </figcaption>                      
-                </figure>
-                </button>
-
-                <button type="button" class="btn" data-toggle="modal" data-target="#modalSocial3">
-                <figure class="snip1581"><img src="images/reddit-img.jpg" alt="profile-sample2"/>
-                    <figcaption>
-                      <h3 class="title1">The</h3>
-                      <h3 class="title2">Reddit</h3>
-                      <h3 class="title3">Clone</h3>
-                    </figcaption>
-                </figure>
-                </button>
-
-                <button type="button" class="btn" data-toggle="modal" data-target="#modalSocial4">
-                <figure class="snip1581"><img src="images/portfolio.png" alt="profile-sample2"/>
-                    <figcaption>
-                      <h3 class="title1">Port</h3>
-                      <h3 class="title2">folio</h3>
-                      <h3 class="title3">Webpage</h3>
-                    </figcaption>
-                </figure>
-                </button>
-            </div>
-        </div>
-
-
-        <div class="tech-type">
-            <p style="color: whitesmoke;">Machine Learning</p>
-            <div>
-                <button type="button" class="btn" data-toggle="modal" data-target="#modalSocial5">
-                    <figure class="snip1581"><img src="https://raw.githubusercontent.com/salonitayal/Covid-Detection-Using-X-ray-Images/master/detectCovid19/screenshots/Screenshot%20from%202021-05-10%2019-21-51.png" alt="profile-sample2"/>
-                    <figcaption>
-                        <h3 class="title1">Detect</h3>
-                        <h3 class="title2">Covid-19</h3>
-                        <h3 class="title3">using X-Rays</h3>
-                    </figcaption>
-                </figure>
-                </button>
-                <button type="button" class="btn" data-toggle="modal" data-target="#modalSocial6">
-                <figure class="snip1581"><img src="images/best-wine-img.jpg" alt="profile-sample2"/>
-                    <figcaption>
-                      <h3 class="title1">Predict</h3>
-                      <h3 class="title2">Red Wine</h3>
-                      <h3 class="title3">Quality</h3>
-                    </figcaption>
-                </figure>
-                </button>
-                <!-- <figure class="snip1581"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample4.jpg" alt="profile-sample2"/>
-                    <figcaption>
-                      <h3 class="title1">Covid-19</h3>
-                      <h3 class="title2">Detection</h3>
-                      <h3 class="title3">Model</h3>
-                    </figcaption><a href="#"></a>
-                </figure> -->
-                <!-- <figure class="snip1581"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample4.jpg" alt="profile-sample2"/>
-                    <figcaption>
-                      <h3 class="title1">The</h3>
-                      <h3 class="title2">Blog</h3>
-                      <h3 class="title3">Application</h3>
-                    </figcaption><a href="#"></a>
-                </figure> -->
-            </div>
-        </div>
-
-        <!--Portfolio modal box design-->
-
-          <!-- The Modal --> 
-          <div class="modal fade" id="modalSocial7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog cascading-modal" role="document">
-  
-              
-              <div class="modal-content">
-  
-              
-              <div class="modal-header light-blue darken-3 white-text">
-                  <h5 class="title"><b>Data Structures & Algorithms </b></h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                      aria-hidden="true">&times;</span></button>
-              </div>
-  
-              
-              <div class="modal-body mb-0 text-center">
-                  <p> I am maintaining a repository of DSA concepts. It contains implementations of various DS and also the problems based on them.</p>
-                  <p><b>Language used: </b>C++ (STL)</p>
-                  <div>
-                      <button type="button" class="btn btn-danger" style="margin-right: 2%; color: white;"><i class="icon fa fa-link" aria-hidden="true"></i>
-                      <a style="color: white;" target="_blank" href="https://github.com/salonitayal/DataStructuresAndAlgorithms">visit</a></button>
-  
-                      <button type="button" class="btn btn-danger" style="background-color: black;"><i class="icon fa fa-github-alt" aria-hidden="true"></i> 
-                      <a style="color: white;" target="_blank" href="https://github.com/salonitayal/DataStructuresAndAlgorithms">github</a></button>
-                  </div>
-              </div>
-  
-              </div>
-          </div>
-          </div>
-         <!-- The Modal -->
-         <div class="modal fade" id="modalSocial1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-         aria-hidden="true">
-         <div class="modal-dialog cascading-modal" role="document">
- 
-             <!--Content-->
-             <div class="modal-content">
- 
-             <!--Header-->
-             <div class="modal-header light-blue darken-3 white-text">
-                 <h5 class="title"><b>Live Score App </b></h5>
-                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                     aria-hidden="true">&times;</span></button>
-             </div>
- 
-             <!--Body-->
-             <div class="modal-body mb-0 text-center">
-                 <p > A ReactJs app that fetches cricket(IPL) related data from cricapi.</p>
-                 <p><b>Technology used: </b> ReactJS, Material UI</p>
-                 <div>
-                    <button type="button" class="btn btn-danger" style="margin-right: 2%; color: white;"><i class="icon fa fa-link" aria-hidden="true"></i>
-                    <a style="color: white;" target="_blank" href="https://ipl-score-react-app.netlify.app/">visit</a></button>
-
-                    <button type="button" class="btn btn-danger" style="background-color: black;"><i class="icon fa fa-github-alt" aria-hidden="true"></i> 
-                    <a style="color: white;" target="_blank" href="https://github.com/salonitayal/CricketScoreReactApp">github</a></button>
-                </div>
-             </div>
- 
-             </div>
-         </div>
-         </div>
-
-          <!-- The Modal --> 
-        <div class="modal fade" id="modalSocial2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog cascading-modal" role="document">
-
-            
-            <div class="modal-content">
-
-            
-            <div class="modal-header light-blue darken-3 white-text">
-                <h5 class="title"><b>Craigslist Scraper </b></h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                    aria-hidden="true">&times;</span></button>
-            </div>
-
-            
-            <div class="modal-body mb-0 text-center">
-                <p> Scraped the data from Craigslist.org using Beautiful soup, and
-                    rendered it on front-end using Django back-end.</p>
-                <p><b>Technology used: </b>Django, BeautifulSoup4, MaterializeUI, Web Scraping</p>
-                <div>
-                    <button type="button" class="btn btn-danger" style="margin-right: 2%; color: white;"><i class="icon fa fa-link" aria-hidden="true"></i>
-                    <a style="color: white;" target="_blank" href="https://github.com/salonitayal/CraigslistScraper/blob/master/README.md">visit</a></button>
-
-                    <button type="button" class="btn btn-danger" style="background-color: black;"><i class="icon fa fa-github-alt" aria-hidden="true"></i> 
-                    <a style="color: white;" target="_blank" href="https://github.com/salonitayal/CraigslistScraper">github</a></button>
-                </div>
-            </div>
-
-            </div>
-        </div>
-        </div>
-
-         <!-- The Modal -->
-         <div class="modal fade" id="modalSocial3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-         aria-hidden="true">
-         <div class="modal-dialog cascading-modal" role="document">
- 
-             <!--Content-->
-             <div class="modal-content">
- 
-             <!--Header-->
-             <div class="modal-header light-blue darken-3 white-text">
-                 <h5 class="title"><b>Reddit Clone </b></h5>
-                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                     aria-hidden="true">&times;</span></button>
-             </div>
- 
-            <!--Body-->
-            <div class="modal-body mb-0 text-center">
-                <p > A Django WebApp that authenticates & authorizes the user then the user can create the posts.</p>
-                <p><b>Technology used: </b>Django, Html, Bootstrap4</p>
-                <div>
-                    <button type="button" class="btn btn-danger" style="margin-right: 2%; color: white;"><i class="icon fa fa-link" aria-hidden="true"></i>
-                    <a style="color: white;" target="_blank" href="https://github.com/salonitayal/RedditClone">visit</a></button>
-
-                    <button type="button" class="btn btn-danger" style="background-color: black;"><i class="icon fa fa-github-alt" aria-hidden="true"></i> 
-                    <a style="color: white;" target="_blank" href="https://github.com/salonitayal/RedditClone">github</a></button>
-                </div>
-            </div>
- 
-             </div>
-         </div>
-         </div>
-
-        <!-- The Modal -->
-        <div class="modal fade" id="modalSocial4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog cascading-modal" role="document">
-
-            <!--Content-->
-            <div class="modal-content">
-
-            <!--Header-->
-            <div class="modal-header light-blue darken-3 white-text">
-                <h5 class="title"><b>Personal Website</b></h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                    aria-hidden="true">&times;</span></button>
-            </div>
-
-            <!--Body-->
-            <div class="modal-body mb-0 text-center">
-                <p > Designed the personal Website.</p>
-                <p><b>Technology used: </b>Html, CSS, Bootstrap4</p>
-                <div>
-                    <button type="button" class="btn btn-danger" style="margin-right: 2%; color: white;"><i class="icon fa fa-link" aria-hidden="true"></i>
-                    <a style="color: white;" target="_blank" href="https://salonitayal.github.io">visit</a></button>
-
-                    <button type="button" class="btn btn-danger" style="background-color: black;"><i class="icon fa fa-github-alt" aria-hidden="true"></i> 
-                    <a style="color: white;" target="_blank" href="https://github.com/salonitayal/salonitayal.github.io">github</a></button>
-                </div>
-            </div>
-
-            </div>
-        </div>
-        </div>
-
-        <!-- The Modal -->
-        <div class="modal fade" id="modalSocial5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog cascading-modal" role="document">
-
-            <!--Content-->
-            <div class="modal-content">
-
-            <!--Header-->
-            <div class="modal-header light-blue darken-3 white-text">
-                <h5 class="title"><b>Detecting Covid-19 Using X-Ray Images</b></h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                    aria-hidden="true">&times;</span></button>
-            </div>
-
-            <!--Body-->
-            <div class="modal-body mb-0 text-center">
-                <p > A CNN based model is build for study purposes to detect Covid-19 in person's X-Ray images. The model is later integrated with flask. </p>
-                <p><b>Technology used: </b>Deep Learning, CNN, Flask</p>
-                <div>
-                    <button type="button" class="btn btn-danger" style="margin-right: 2%; color: white;"><i class="icon fa fa-link" aria-hidden="true"></i>
-                    <a style="color: white;" target="_blank" href="https://github.com/salonitayal/Covid-Detection-Using-X-ray-Images/blob/master/README.md">visit</a></button>
-
-                    <button type="button" class="btn btn-danger" style="background-color: black;"><i class="icon fa fa-github-alt" aria-hidden="true"></i> 
-                    <a style="color: white;" target="_blank" href="https://github.com/salonitayal/Covid-Detection-Using-X-ray-Images">github</a></button>
-                </div>
-            </div>
-
-            </div>
-        </div>
-        </div>
-
-
-        <!-- The Modal -->
-        <div class="modal fade" id="modalSocial6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog cascading-modal" role="document">
-
-            <!--Content-->
-            <div class="modal-content">
-
-            <!--Header-->
-            <div class="modal-header light-blue darken-3 white-text">
-                <h5 class="title"><b>Red Wine Quality Prediction</b></h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                    aria-hidden="true">&times;</span></button>
-            </div>
-
-            <!--Body-->
-            <div class="modal-body mb-0 text-center">
-                <p > A Machine Learning model that predicts the quality of the Red wine. </p>
-                <p><b>Technology used: </b>Machine Learning, Python</p>
-                <div>
-                    <button type="button" class="btn btn-danger" style="margin-right: 2%; color: white;"><i class="icon fa fa-link" aria-hidden="true"></i>
-                    <a style="color: white;" target="_blank" href="https://github.com/salonitayal/Red-Wine-Quality-Prediction/blob/master/Predicting-Red-Wine-Quality.ipynb">visit</a></button>
-
-                    <button type="button" class="btn btn-danger" style="background-color: black;"><i class="icon fa fa-github-alt" aria-hidden="true"></i> 
-                    <a style="color: white;" target="_blank" href="https://github.com/salonitayal/Red-Wine-Quality-Prediction">github</a></button>
-                </div>
-            </div>
-
-            </div>
-        </div>
-        </div>
-
-        
-
-        <div class="tech-type">
-            <p style="color: whitesmoke;">Problem Solving </p>
-            <div>
-                <figure class="snip1581"><img src="https://leetcode.com/static/images/LeetCode_logo_rvs.png" alt="profile-sample2"/>
-                    <figcaption>
-                      <h3 class="title2">Leet</h3>
-                      <h3 class="title3">Code</h3>
-                    </figcaption><a href="https://leetcode.com/salonitayal/"></a>
-                </figure>
-                <figure class="snip1581"><img src="images/gfg-img.png" alt="profile-sample2"/>
-                    <figcaption>
-                      <h3 class="title1">Geeks</h3>
-                      <h3 class="title2">For</h3>
-                      <h3 class="title3">Geeks</h3>
-                    </figcaption><a href="https://auth.geeksforgeeks.org/user/user9897/practice/"></a>
-                </figure>
-                <figure class="snip1581"><img src="images/codechef-img.jpg" alt="profile-sample2"/>
-                    <figcaption>
-                      <!-- <h3 class="title1">The</h3> -->
-                      <h3 class="title2">Code</h3>
-                      <h3 class="title3">chef</h3>
-                    </figcaption><a href="https://www.codechef.com/users/salonitayal"></a>
-                </figure>
-                <figure class="snip1581"><img src="images/kackerrank-img.png" alt="profile-sample2"/>
-                    <figcaption>
-                      <!-- <h3 class="title1">Hacker</h3> -->
-                      <h3 class="title2">Hacker</h3>
-                      <h3 class="title3">Rank</h3>
-                    </figcaption><a href="https://www.hackerrank.com/salonitayal"></a>
-                </figure>
-            </div>
+<div class="container about bg-dark text-white" style="animation: bounce; animation-duration: 2s; max-width: 1500px;" data-aos="fade-up">
+    <div class="row" style="height: 100px"></div>
+    <div class="container" style="text-align:center;" data-aos="fade-up">
+        <img class="profile" src="images/profile.svg" style="width: 16vw; border-radius: 100%; border-color: transparent; box-shadow: 0px 0px 4px #00000081;"/>
+        <div style="padding-left: 0px; padding-top:20px;" data-aos="fade-up">
+            <button type="button" class="btn" style="margin-right: 10px; border-color:white; color: white;">Let's Connect !</button>
+            <button type="button" class="btn" style="border-color: white; color: white;">Resume</button>
         </div>
     </div>
-
-    <!--Portfolio ends-->
-
-    <!--End wrapper starts-->
-    <div class="end-wrapper">
-        <!--Contact me-->
-        <div id="contact">
-            <div id="portfolio">
-                <p>GET IN TOUCH</p>
-            </div>
-            <div class="contact-content">
-                <div class="header-icons">
-                    <a aria-label="Send email" href="mailto:saloni.tayal.cs.2017@miet.ac.in"><i style="color: gray;" class="icon fa fa-envelope"><p style="font-size: 14px;padding-top: 6px;">Mail</p></i></a>
-                    <a aria-label="My Twitter" target="_blank" href="https://twitter.com/salonitayal"><i style="color: gray;" class="icon fa fa-twitter" aria-hidden="true"><p style="font-size: 14px;padding-top: 6px;">twitter</p></i></a>
-                    <a aria-label="My Github" target="_blank" href="https://github.com/salonitayal"><i style="color: gray;" class="icon fa fa-github-alt" aria-hidden="true"><p style="font-size: 14px;padding-top: 6px;">github</p></i></a>
-                    <a aria-label="My Instagram" target="_blank" href="https://linkedin.com/in/salonitayal"><i style="color: gray;" class="icon fa fa-linkedin" aria-hidden="true"><p style="font-size: 14px;padding-top: 6px;">linkedin</p></i></a>
-                    <!-- <a aria-label="View Resume" target="_blank" href="#"><i class="icon fa fa-file-text" aria-hidden="true"><p style="font-size: 14px;padding-top: 6px;">Resume</p></i></a> -->
-                </div>
-            </div>
-        </div>
-
-        <!--Counter -->
-        <!-- <div align=center><p style="font-size: 18px; font-weight: 600;">visits: <a href='https://www.counter12.com'><img src='https://www.counter12.com/img-BBW51zxWx15db68a-9.gif' border='0' alt='contador de visitantes'></a><script type='text/javascript' src='https://www.counter12.com/ad.js?id=BBW51zxWx15db68a'></script></div> -->
-
-        <!-- Footer -->
-        <footer class="page-footer ">
-
-        <!-- Copyright -->
-        <div class="footer-copyright text-center">© 2020 Copyright:
-        <a href="https://github.com/salonitayal"> Saloni Tayal.</a>
-        </div>
-        <!-- Copyright -->
-    
-        </footer>
-        <!-- Footer -->
+    </br>
+    <div class="description" data-aos="fade-up">
+            <span class="heading" style="font-size: 22px; font-weight: 500; justify-content: center;">नमस्ते! I'm Saloni Tayal.</span>
+            </br>
+                Focus on the job in question As you prepare your response, always keep the job you're applying for in mind.
+                Whether you're an entry-level candidate or a senior applicant, make sure the narrative you create leads toward
+                the role in question. To focus your answer successfully, do some brainstorming. Write down what interests you
+                in the position, such as unique challenges and responsibilities. Then write down what you like about the company, 
+                such as its mission or its growth plan.
+            </br>
+        </br>
+            <ul class="list-group" style="padding-left: 10px;" data-aos="fade-up">
+                <li><b>Fundamentals : </b> Data Structures, Algorithms, DBMS, Operating System, OOPS</li>
+                <li><b>Languages : </b> C++(STL), Python, C, HTML, CSS</li>
+                <li><b>Frameworks :</b> Django, Django Rest Framework, Bootstrap, Flask, Keras</li>
+                <li><b>Tools & Technologies :</b> REST API, Postman, Git</li>
+            </ul>
     </div>
-    <!--End wrapper ends-->
-    
-    <!-- Particle-js file -->
-    <!-- <script type="text/javascript" src="js/particles.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script> -->
+    <div class="row description-arrow" style="height: 100px" data-aos="fade-up">
+        <div class="col-10"></div>
+        <div>
+            <span class="material-symbols-outlined">arrow_downward</span>
+        </div>
+    </div>
+</div>
 
-    
+<div class="flex-container" data-aos="fade-up" >
+    <div class="left" data-aos="fade-up">
+        <img src="images/try.jpg" class="project" style="border-radius: 30px; box-shadow: 0px 0px 15px #0000004c;" />
+    </div>
+    <div class="right" data-aos="fade-up">
+        <span class="heading" style="font-size: 22px; font-weight: 500; justify-content: center;">API </span>
+        </br>
+        <div class="container" style="text-align: left;">
+            Focus on the job in question As you prepare your response, always keep the job you're applying for in mind.
+        Whether you're an entry-level candidate or a senior applicant, make sure the narrative you create leads toward
+        the role in question. To focus your answer successfully, do some brainstorming. Write down what interests you
+        in the position, such as unique challenges and responsibilities. Then write down what you like about the company, 
+        such as its mission or its growth plan.
+        </div>
+        </br>
+    </div>
+</div>
 
 
+<div class="container" style="animation: bounce; animation-duration: 2s;">
+    <div class="row" style="height: 170px"></div>
+    <div class="row ">
+        <div class="front-page">
+        <h1 class="name" style="font-size: 6vw; font-weight: 700;" data-aos="fade-up">
+            Connect with me.<span style="color:White;"></span></h1>
+        <div class="flex-container1" style="display: flex;" data-aos="fade-up">
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-envelope"></a>
+            <a href="#" class="fa fa-github"></a>
+            <a href="#" class="fa fa-twitter"></a>
+        </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 150px; margin-bottom: 50px;">
+        <div class="col-10"></div>
+        <div class="animate__animated animate__flash" data-aos="fade-up">
+            <span class="material-symbols-outlined">arrow_upward</span>
+        </div>
+    </div>
+</div>
+<div class="container" style="text-align: center; padding: 3%; font-size: 12px; font-weight: 600;">
+    © copyrights 2022: Saloni Tayal.
+</div>
+
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.js"></script>
+<script>AOS.init();</script>
+  
 </body>
 </html>
+
